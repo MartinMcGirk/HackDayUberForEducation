@@ -71,12 +71,6 @@ UberForEducation.prototype.saveAskForHelp = function(e) {
 
     // Add a new message entry to the Firebase Database.
     this.messagesRef2.push({
-      // name: currentUser.displayName,
-      // subject: this.subjectSelectBox.value,
-      // category: this.categoryInput.value,
-      // chatRoomId: chatRoomId,
-      // gotHelp: false,
-      // photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
       name: currentUser.displayName,
       text: 'This room is because I want to know more about ' + this.subjectSelectBox.value
       + ', specifically ' + this.categoryInput.value + '. Waiting for someone to come help...',
