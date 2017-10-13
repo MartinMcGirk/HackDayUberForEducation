@@ -1,0 +1,36 @@
+[debug] [2017-10-13T09:01:07.909Z] ----------------------------------------------------------------------
+[debug] [2017-10-13T09:01:07.912Z] Command:       /usr/local/Cellar/node/8.4.0/bin/node /usr/local/bin/firebase serve
+[debug] [2017-10-13T09:01:07.913Z] CLI Version:   3.13.1
+[debug] [2017-10-13T09:01:07.913Z] Platform:      darwin
+[debug] [2017-10-13T09:01:07.913Z] Node Version:  v8.4.0
+[debug] [2017-10-13T09:01:07.914Z] Time:          Fri Oct 13 2017 10:01:07 GMT+0100 (BST)
+[debug] [2017-10-13T09:01:07.914Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-13T09:01:07.928Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-13T09:01:07.929Z] > authorizing via signed-in user
+[debug] [2017-10-13T09:01:07.931Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-13T09:01:07.931Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/wQDhXoNhju-KrzwYC7TxKjFnxyKd_kcvlJ1GRl_nO90',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Oct 13 2017 10:01:07 GMT+0100 (BST)
+[debug] [2017-10-13T09:01:08.078Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-13T09:01:08.093Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/uberforeducation-48a59  
+ Fri Oct 13 2017 10:01:08 GMT+0100 (BST)
+[debug] [2017-10-13T09:01:08.778Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-13T09:01:08.784Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/uberforeducation-48a59/tokens  
+ Fri Oct 13 2017 10:01:08 GMT+0100 (BST)
+[debug] [2017-10-13T09:01:09.411Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/martinmcgirk/Projects/uberForEducation'...
+[info] 
+[debug] [2017-10-13T09:01:09.414Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/uberforeducation-48a59  
+ Fri Oct 13 2017 10:01:09 GMT+0100 (BST)
+[debug] [2017-10-13T09:01:10.177Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-13T09:01:10.177Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/353527424390/clients/_:getWebAppConfig  
+ Fri Oct 13 2017 10:01:10 GMT+0100 (BST)
+[debug] [2017-10-13T09:01:10.689Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] ✔  hosting: Local server: http://localhost:5000
+

@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "name": "Uber For Education",
+  "launch_path": "/index.html",
+  "description": "Get help on what you need",
+  "developer": {
+    "name": "MMG and EK",
+    "url": "https://firebase.google.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Uber For Education",
+      "description": "Get help on what you need"
+    }
+  }
+}
