@@ -316,5 +316,5 @@ UberForEducation.prototype.checkSetup = function() {
 };
 
 window.onload = function() {
-  window.friendlyChat = new UberForEducation();
+  window.uberForEducation = new UberForEducation();
 };
