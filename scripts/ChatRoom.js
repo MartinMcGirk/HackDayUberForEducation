@@ -15,12 +15,14 @@ function UberForEducation() {
   this.userName = document.getElementById('user-name');
   this.signInButton = document.getElementById('sign-in');
   this.signOutButton = document.getElementById('sign-out');
+  this.leaveChatButton = document.getElementById('leaveChat');
   this.signInSnackbar = document.getElementById('must-signin-snackbar');
 
   // Saves message on form submit.
   this.messageForm.addEventListener('submit', this.saveMessage.bind(this));
   this.signOutButton.addEventListener('click', this.signOut.bind(this));
   this.signInButton.addEventListener('click', this.signIn.bind(this));
+  this.leaveChatButton.addEventListener('click', this.leaveChat.bind(this));
 
   // Toggle for the button.
   var buttonTogglingHandler = this.toggleButton.bind(this);
@@ -90,9 +92,28 @@ UberForEducation.prototype.saveMessage = function(e) {
       UberForEducation.resetMaterialTextfield(this.messageInput);
       this.toggleButton();
     }.bind(this)).catch(function(error) {
-      console.error('Error writing new message to Firebase Database', error);
+      console.error('Error leaving chat', error);
     });
   }
+};
+
+// Saves a new message on the Firebase DB.
+UberForEducation.prototype.leaveChat = function(e) {
+  e.preventDefault();
+  // Check that the user entered a message and is signed in.
+
+  var currentUser = this.auth.currentUser;
+  // Add a new message entry to the Firebase Database.
+  this.messagesRef.push({
+    name: 'UberEd',
+    text: currentUser.displayName + ' has left the chat.',
+    photoUrl: 'https://pbs.twimg.com/profile_images/2127367629/shabothead1-1-1.png'
+  }).then(function() {
+    window.location = '/index.html'
+  }.bind(this)).catch(function(error) {
+    console.error('Error writing new message to Firebase Database', error);
+  });
+
 };
 
 // Sets the URL of the given img element with the URL of the image stored in Cloud Storage.
