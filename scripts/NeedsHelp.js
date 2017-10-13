@@ -173,8 +173,8 @@ UberForEducation.prototype.onAuthStateChanged = function(user) {
     // Hide sign-in button.
     this.signInButton.setAttribute('hidden', 'true');
 
-    // We load currently existing chant messages.
-    this.loadMessages();
+    // // We load currently existing chant messages.
+    // this.loadMessages();
 
     // We save the Firebase Messaging Device token and enable notifications.
     this.saveMessagingDeviceToken();

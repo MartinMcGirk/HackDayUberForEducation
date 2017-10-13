@@ -17,13 +17,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Get help with what you need">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uber For Education</title>
+  <title>UberEd</title>
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
 
-  <!-- Web Application Manifest -->
-  <link rel="manifest" href="manifest.json">
+  <!--&lt;!&ndash; Web Application Manifest &ndash;&gt;-->
+  <!--<link rel="manifest" href="manifest.json">-->
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -56,7 +56,7 @@
   <header class="mdl-layout__header mdl-color-text--white mdl-color--light-blue-700">
     <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
       <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-        <h3><i class="material-icons">chat_bubble_outline</i> Uber for Education</h3>
+        <h3><i class="material-icons">chat_bubble_outline</i> UberEd</h3>
       </div>
       <div id="user-container">
         <div hidden id="user-pic"></div>
@@ -72,16 +72,48 @@
   </header>
 
   <main class="mdl-layout__content mdl-color--grey-100">
-    <div id="messages-card-container" class="mdl-cell mdl-cell--12-col mdl-grid">
-      <div>
-        Do you:
-      </div>
-      <div>
-        <a href="pages/NeedsHelp.html">Need Help?</a>
-        <a href="pages/GiveHelp.html">Want to Help?</a>
-      </div>
+
+    <div class="mdl-layout__tab-panel is-active" id="overview">
+      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp infobox">
+        <header style="background-image: url(https://pbs.twimg.com/profile_images/766401851633897472/AEwwyGA6.jpg); background-position: center center;  background-size: cover;" class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+          <i class="material-icons">play_circle_filled</i>
+        </header>
+        <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+          <div class="mdl-card__supporting-text">
+            <h4>Like Uber, but for Education</h4>
+            Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
+          </div>
+          <div class="mdl-card__actions">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--12-col">
+                <form method="get" action="/pages/NeedsHelp.html">
+                  <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored ek-button">
+                    Need Help?
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--12-col">
+                <form method="get" action="/pages/GiveHelp.html">
+                  <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored ek-button">
+                    Want to Help?
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
+          <li class="mdl-menu__item">Lorem</li>
+          <li class="mdl-menu__item" disabled>Ipsum</li>
+          <li class="mdl-menu__item">Dolor</li>
+        </ul>
+      </section>
     </div>
   </main>
+
 </div>
 
 <!-- Import and configure the Firebase SDK -->

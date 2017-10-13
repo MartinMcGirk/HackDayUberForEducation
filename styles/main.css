@@ -28,6 +28,7 @@ main, #messages-card {
 #messages-card {
   margin-top: 15px;
 }
+
 .mdl-layout__header-row span {
   margin-left: 15px;
   margin-top: 17px;
@@ -73,6 +74,17 @@ main, #messages-card {
 .message-container.visible {
   opacity: 1;
 }
+
+
+.infobox{
+  min-height: 250px;
+  margin-top: 30px;
+}
+
+.ek-button{
+  min-width: 200px;
+}
+
 .message-container .pic {
   background-image: url('/images/profile_placeholder.png');
   background-repeat: no-repeat;
